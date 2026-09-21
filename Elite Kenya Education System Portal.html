@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)file:///C:/Users/HP/Desktop/EDUCATION%20SYSTEM.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Kenya Education System Portal</title>
+  <link rel="manifest" href="file:///C:/Users/HP/Desktop/manifest.json">
+  <style>
+    body { margin:0; font-family:'Segoe UI', Tahoma, sans-serif; background:#f4f6f9; color:#222; }
+    header { background:linear-gradient(135deg,#0a3d62,#1e90ff); color:white; padding:30px; }
+    header h1 { margin:0; font-size:2.2em; }
+    nav { background:#0c2461; display:flex; flex-wrap:wrap; gap:20px; padding:15px; }
+    nav a { color:white; text-decoration:none; font-weight:600; cursor:pointer; }
+    nav a:hover { text-decoration:underline; }
+    section { padding:40px; display:none; }
+    section.active { display:block; }
+    .card { background:white; border-radius:12px; padding:25px; box-shadow:0 8px 20px rgba(0,0,0,0.08); margin-bottom:30px; }
+    h2 { color:#0c2461; }
+    footer { background:#0c2461; color:white; padding:25px; text-align:center; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+    button { padding:12px; border-radius:8px; border:none; background:#1e90ff; color:white; font-weight:600; cursor:pointer; }
+    button:hover { background:#0a3d62; }
+    table { width:100%; border-collapse:collapse; }
+    th, td { border:1px solid #ccc; padding:10px; text-align:left; }
+    th { background:#eaf2ff; }
+    input { padding:12px; border-radius:8px; border:1px solid #ccc; width:100%; margin-top:10px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Elite Kenya Education System Portal</h1>
+  <p>Integrated Digital Platform for CBC, 8-4-4, TVET &amp; University Education</p>
+</header>
+
+<nav>
+  <a onclick="showSection('login')">Login</a>
+  <a onclick="showSection('home')">Home</a>
+  <a onclick="showSection('cbc')">CBC System</a>
+  <a onclick="showSection('eight')">8-4-4 System</a>
+  <a onclick="showSection('tvet')">TVET</a>
+  <a onclick="showSection('university')">University</a>
+  <a onclick="showSection('compare')">Comparison</a>
+  <a onclick="showSection('sell')">Institution Package</a>
+</nav>
+
+<section id="login" class="">
+  <div class="card">
+    <h2>Secure Login Portal</h2>
+    <p>Elite Kenya Education System – Authorized Access Only</p>
+    <input id="username" type="text" placeholder="Username">
+    <input id="password" type="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p id="loginMsg" style="margin-top:10px; font-weight:600;"></p>
+    <p style="font-size:0.9em;">Demo Credentials → Admin: <b>admin</b> | Password: <b>EliteKenya@2026</b></p>
+  </div>
+</section>
+
+<section id="home">
+  <div class="card">
+    <h2>Admin Dashboard</h2>
+    <div class="grid">
+      <div class="card"><h3>Institution Management</h3><p>Add schools, TVETs &amp; universities</p></div>
+      <div class="card"><h3>User Accounts</h3><p>Create Admin, Teacher &amp; Student accounts</p></div>
+      <div class="card"><h3>Curriculum Control</h3><p>Activate CBC, 8-4-4, TVET, University modules</p></div>
+      <div class="card"><h3>Reports &amp; Analytics</h3><p>Performance, assessments &amp; system usage</p></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Teacher Dashboard</h2>
+    <ul>
+      <li>Upload notes &amp; learning materials</li>
+      <li>Create CATs, exams &amp; assignments</li>
+      <li>Assess learners &amp; generate reports</li>
+      <li>Track competencies (CBC)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Student Dashboard</h2>
+    <ul>
+      <li>Access learning materials</li>
+      <li>Submit assignments</li>
+      <li>View results &amp; progress</li>
+      <li>Competency portfolio</li>
+    </ul>
+  </div>
+</section>
+
+<section id="cbc" class="active">
+  <div class="card">
+    <h2>Competency Based Curriculum (CBC)</h2>
+    <ul>
+      <li>Competency tracking dashboards</li>
+      <li>Formative &amp; summative assessments</li>
+      <li>Digital learner portfolios</li>
+      <li>Parent &amp; teacher reports</li>
+      <li>Creative &amp; practical learning tools</li>
+    </ul>
+    <button onclick="alert('CBC Tools Module Activated')">Launch CBC Tools</button>
+  </div>
+</section>
+
+<section id="eight">
+  <div class="card">
+    <h2>8-4-4 Education System</h2>
+    <ul>
+      <li>Syllabus-based content</li>
+      <li>Past papers &amp; marking schemes</li>
+      <li>CATs &amp; mock exams</li>
+      <li>Performance analytics</li>
+      <li>KCPE &amp; KCSE exam preparation</li>
+    </ul>
+    <button onclick="alert('8-4-4 Academic Tools Activated')">Launch 8-4-4 Tools</button>
+  </div>
+</section>
+
+<section id="tvet">
+  <div class="card">
+    <h2>TVET System</h2>
+    <ul>
+      <li>Skills-based modules</li>
+      <li>CBET assessment tools</li>
+      <li>Industry certification tracking</li>
+      <li>Practical logbooks</li>
+      <li>Internship &amp; attachment management</li>
+    </ul>
+    <button onclick="alert('TVET Skills Tools Activated')">Launch TVET Tools</button>
+  </div>
+</section>
+
+<section id="university" class="">
+  <div class="card">
+    <h2>University Education</h2>
+    <ul>
+      <li>Course &amp; unit management</li>
+      <li>Online CATs &amp; exams</li>
+      <li>Research &amp; project supervision</li>
+      <li>E-learning &amp; virtual classrooms</li>
+      <li>Transcript &amp; grading system</li>
+    </ul>
+    <button onclick="alert('University LMS Activated')">Launch University LMS</button>
+  </div>
+</section>
+
+<section id="compare">
+  <div class="card">
+    <h2>Comparison of Kenyan Education Systems</h2>
+    <table>
+      <tbody><tr><th>System</th><th>Focus</th><th>Assessment</th><th>Outcome</th></tr>
+      <tr><td>CBC</td><td>Skills &amp; competencies</td><td>Continuous</td><td>Holistic learner</td></tr>
+      <tr><td>8-4-4</td><td>Academic knowledge</td><td>Examinations</td><td>Grades &amp; certification</td></tr>
+      <tr><td>TVET</td><td>Practical skills</td><td>CBET</td><td>Employability</td></tr>
+      <tr><td>University</td><td>Professional &amp; research</td><td>CATs &amp; exams</td><td>Degrees &amp; innovation</td></tr>
+    </tbody></table>
+  </div>
+</section>
+
+<section id="sell">
+  <div class="card">
+    <h2>Institutional Licensing &amp; Sales</h2>
+    <p>This platform can be licensed to:</p>
+    <ul>
+      <li>Primary &amp; Secondary Schools</li>
+      <li>TVET Colleges</li>
+      <li>Universities</li>
+      <li>Education NGOs &amp; Government</li>
+    </ul>
+    <p><strong>Demo Sales Link:</strong> https://elite-kenya-education-portal.vercel.app</p>
+    <button onclick="alert('Institution Sales Mode Ready')">Activate Sales Mode</button>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Elite Kenya Education System | Designed by Innocent Kelvin Mukhongo</p>
+</footer>
+
+<script>
+  function showSection(id){
+    document.querySelectorAll('section').forEach(sec=>sec.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+  }
+
+  function login(){
+    const u = document.getElementById('username').value;
+    const p = document.getElementById('password').value;
+    if(u==='admin' && p==='EliteKenya@2026'){
+      document.getElementById('loginMsg').innerHTML='Login successful. Welcome Admin.';
+      showSection('home');
+    } else {
+      document.getElementById('loginMsg').innerHTML='Invalid credentials. Access denied.';
+    }
+  }
+
+  if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('sw.js');
+  }
+</script>
+
+
+
+</body></html>
